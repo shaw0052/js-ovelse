@@ -12,11 +12,19 @@
     <!----- JavaScript ----->
 
     <script>
-        let længde = 4;
+        // variablerne længde, bredde og areal
+        let længde = 3;
         let bredde = 5;
+        // udregning af areal
         const areal = (længde * bredde);
-
-        console.log(areal);
+        // if statement
+        if (areal > 100) {
+            console.log("Arealet er for lille")
+        } else if (areal > 100 || areal < 200) {
+            console.log("Arealet er passende")
+        } else if (areal >= 200) {
+            console.log("Arealet er for stort")
+        }
     </script>
 
 </body>
