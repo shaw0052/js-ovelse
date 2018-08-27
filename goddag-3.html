@@ -12,18 +12,15 @@
     <!----- JavaScript ----->
 
     <script>
-        // variablerne længde, bredde og areal
-        let længde = 3;
-        let bredde = 5;
-        // udregning af areal
-        const areal = (længde * bredde);
-        // if statement
-        if (areal < 100) {
-            console.log("Arealet er for lille")
-        } else if (areal > 100 || areal < 200) {
-            console.log("Arealet er passende")
-        } else if (areal >= 200) {
-            console.log("Arealet er for stort")
+        let navn = prompt("Hvad hedder du?");
+        //hvis navnet opgives: sig "goddag" til navn
+        if (navn != null && navn != "") {
+            alert(" Goddag " + navn);
+        }
+
+        //Hvis navnet ikk er opgivet sig "goddag min ven"
+        else {
+            alert("Goddag min ven")
         }
     </script>
 
