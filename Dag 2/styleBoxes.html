@@ -9,7 +9,7 @@
         body {
             color: burlywood;
         }
-        
+
         .box {
             display: inline-block;
             width: 10vw;
@@ -18,6 +18,7 @@
             margin: 7vw;
             transition: all 1s;
         }
+
         /*********************/
     </style>
 
@@ -30,7 +31,57 @@
     <div class="box" id="box4"></div>
 
     <script>
+        //Klik på boks 1 og skift til rød farve
+        const box1 = document.querySelector("#box1");
+
+        box1.addEventListener("click", rød);
+
+        function rød() {
+            box1.style.backgroundColor = "red";
+            box1.style.height = "15vw";
+            box1.style.width = "15vw";
+            box1.style.border = "solid 15px pink";
+
+            console.log("du har klikket box 1");
+        }
+
+
+        //Klik på boks 2 og skift til lyserød farve
+        const box2 = document.querySelector("#box2");
+
+        box2.addEventListener("click", lyserød);
+
+        function lyserød() {
+            box2.style.backgroundColor = "pink";
+            box2.style.border = "dotted 4px red";
+            console.log("du har klikket box 2");
+        }
+
+        //Klik på boks 3 og skift til gul farve og anden form
+        const box3 = document.querySelector("#box3");
+
+        box3.addEventListener("click", gul);
+
+        function gul() {
+            box3.style.backgroundColor = "yellow";
+            box3.style.borderRadius = "10rem";
+            box3.style.border = "solid 20px red";
+            console.log("du har klikket box 3");
+        }
+
+        //Klik på boks 3 og skift til blå farve
+        const box4 = document.querySelector("#box4");
+
+        box4.addEventListener("click", blå);
+
+        function blå() {
+            box4.style.backgroundColor = "blue";
+            box4.style.height = "15vw";
+            console.log("du har klikket box 4");
+        }
     </script>
+
+
 </body>
 
 </html>
